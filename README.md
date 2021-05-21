@@ -1,4 +1,4 @@
-# My Learning Progress >.<>
+# My Learning Progress >.<
 Hi! This folder is for me to learn about hosting websites using Github. 
 
 ## Plans?
@@ -7,4 +7,4 @@ Hi! This folder is for me to learn about hosting websites using Github.
 
 ## Lastly...
 
-<b>Wish me luck yall! <b>
+<b> Wish me luck yall! <b>
