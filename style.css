@@ -1,0 +1,16 @@
+
+header {
+    font: Tahoma, Verdana;
+    font-size: 15px;
+    color: blue;
+}
+
+body {
+    margin: auto;
+    
+}
+
+table {
+    padding: 1px;
+    font-size: 10px;
+}
