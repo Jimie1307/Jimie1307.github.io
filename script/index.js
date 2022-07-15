@@ -3,48 +3,68 @@ $(document).ready( function(){
 
     // intro
     $("#introbtn").click(function(){
-        showContent("#introbtn_li","#introduction",tmp);
+        hideContent(tmp);
+        showContent("#introbtn_li","#introduction",);
         tmp = 1;
+    })
+
+    // edu
+    $("#edubtn").click(function(){
+        hideContent(tmp);
+        showContent("#edubtn_li","#edu");
+        tmp = 2;
+    })
+
+    // career
+    $("#careerbtn").click(function(){
+        hideContent(tmp);
+        showContent("#careerbtn_li","#career");
+        tmp = 3;
     })
 
     // project
     $("#projectbtn").click(function(){
-        showContent("#projectbtn_li","#projects",tmp);
-        tmp = 2;
+        hideContent(tmp);
+        showContent("#projectbtn_li","#projects");
+        tmp = 4;
     })
 
     // employment
     $("#employbtn").click(function(){
-        showContent("#employbtn_li","#employment",tmp);
-        tmp = 3;
+        hideContent(tmp);
+        showContent("#employbtn_li","#employment");
+        tmp = 5;
     })
 
-    // contact
-    $("#contactbtn").click(function(){
-        showContent("#contactbtn_li","#contact",tmp);
-        tmp = 4;
-    })
-
-    function showContent(id, divid,tmp){
+    function hideContent(tmp){
         // remove currently active
         switch(tmp){
             case 1:
                 $("#introbtn_li").removeClass("is-active");
-                $("#introduction").fadeOut();
-                break;
-            case 2:
-                $("#projectbtn_li").removeClass("is-active");
-                $("#projects").fadeOut();
-                break;
-            case 3:
-                $("#employbtn_li").removeClass("is-active");
-                $("#employment").fadeOut();
+                $("#introduction").hide();
                 break;
             case 4:
-                $("#contactbtn_li").removeClass("is-active");
-                $("#contact").fadeOut();
+                $("#projectbtn_li").removeClass("is-active");
+                $("#projects").hide();
                 break;
+            case 5:
+                $("#employbtn_li").removeClass("is-active");
+                $("#employment").hide();
+                break;
+            case 2:
+                $("#edubtn_li").removeClass("is-active");
+                $("#edu").hide();
+            break;
+
+            case 3:
+                $("#careerbtn_li").removeClass("is-active");
+                $("#career").hide();
+            break;
         }
+        
+    }
+
+    function showContent(id,divid){
         // is active
         $(id).addClass("is-active");
         $(divid).fadeIn("slow");
