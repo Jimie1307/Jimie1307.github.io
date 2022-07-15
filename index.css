@@ -1,0 +1,31 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu+Condensed&display=swap');
+
+
+body{
+    font-size: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.outer, footer {
+    background-color: #FFC4C4;
+}
+
+.welcome{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 3rem;
+}
+
+.navlinks{
+    margin: auto;
+    align-items:center;
+}
+
+.content{
+    width: 50%;
+}
+
+.paragraph, nav{
+    font-family: 'Quicksand', sans-serif;
+}
