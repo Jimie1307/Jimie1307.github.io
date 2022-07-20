@@ -1,10 +1,3 @@
-# My Learning Progress >.<
-Hi! This folder is for me to learn about hosting websites using Github. 
-
-## Plans?
-1. Make a simple website
-2. Possibly actually learning it LMAOO sorry yall....gaming is just too fun
-
-## Lastly...
-
-<b> Wish me luck yall! <b>
+# My Online Portfolio! >.<
+Hi! This repo contains all the stuff I wrote to build my super simple online portfolio :D
+Intended to include this in my resume! Hopefully my creative juices will come out with a bunch of ideas on how to make it cute and fun to look at lol
