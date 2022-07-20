@@ -177,43 +177,162 @@
         </div>
 
         <!-- Project -->
-        <div id="edu" name="outer" class="container is-fluid p-5 mt-4 mb-4 outer" hidden>
+        <div id="projects" name="outer" class="container is-fluid p-5 mt-4 mb-4 outer" hidden>
             <div class="has-background-white">
-                <div class="m-auto is-flex is-flex-direction-column p-5 mt-5 mb-5 content paragraph">
+                <div class="m-auto is-flex is-flex-direction-column p-5 mt-5 mb-5 paragraph">
                     <div>
-                        <h3 class="title is-2 has-text-centered">PROJECT</h3>
-                        <div class="is-flex is-flex-direction-row">
-                            <!-- Borneo Homestay -->
-                            <div class="box">
-                                <article class="media">
-                                    <div class="media-left">
-                                        <!-- Image of project -->
-                                        <figure>
+                        <h3 class="title is-3 has-text-centered">PROJECTS</h3>
+                        <!-- Intern project -->
+                        <div class="is-flex is-flex-direction-column">
+                            <h4>Internship Projects</h4>
+                            <div class="m-auto column is-half">
+                                <div class="box">
 
-                                        </figure>
-                                    </div>
-                                    <div class="media content">
-                                        <div class="content">
-
-                                        </div>
-                                    </div>
-                                </article>
+                                </div>
                             </div>
-                            <!-- Issue System -->
-                            <div class="box">
-                                <article class="media">
-                                    <div class="media-left">
-                                        <!-- Image of project -->
-                                        <figure>
-
-                                        </figure>
-                                    </div>
-                                    <div class="media content">
-                                        <div class="content">
-
+                        </div>
+                        <!-- University Project -->
+                        <div class="is-flex is-flex-direction-column">
+                            <h4 class="title is-4 has-text-centered">University Projects</h4>
+                            <div class="m-auto column is-half">
+                                <!-- FYP Project -->
+                                <div class="box">
+                                    <h5 class="title is-5 has-text-centered">Final Year Project: Securing Documents with Lightweight Encryption Algorithm</h5>
+                                    <article class="media is-flex- is-flex-direction-row">
+                                        <div class="media-left">
+                                            <!-- Image of project -->
+                                            <figure class="image is-128x128 has-background-dark is-flex is-align-items-center">
+                                                <img src="pics/horusdoc_dark.svg" alt="logo of my final year project, horusdoc">
+                                            </figure>
                                         </div>
-                                    </div>
-                                </article>
+                                        <div class="media">
+                                            <div>
+                                                <article class="is-size-6">
+                                                    This is my final year project involving a web application that allows users to store and share documents in a secure way, by implementing a lightweight symmetric encryption algorithm. 
+                                                </article>
+                                                <!-- Tags showing the techs/language used -->
+                                                <div class="mt-3 mb-4">
+                                                    <span class="tag is-info mr-2 mb-2">HTML</span>
+                                                    <span class="tag is-info mr-2 mb-2">jQuery/AJAX</span>
+                                                    <span class="tag is-info mr-2 mb-2">CSS/Bootstrap</span>
+                                                    <span class="tag is-info mr-2 mb-2">PHP</span>
+                                                    <span class="tag is-info mr-2 mb-2">MySQL</span>
+                                                </div>
+                                                <button class="button is-small js-modal-trigger" data-target="modal-thesis" aria-haspopup="true">View Thesis</button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- Borneo Homestay System -->
+                                <div class="box">
+                                    <h5 class="title is-5 has-text-centered">Borneo Homestay System (Mock Homestay Booking System)</h5>
+                                    <article class="media">
+                                        <div class="media-left">
+                                            <!-- Image of project -->
+                                            <figure class="image is-128x128 is-flex is-align-items-center">
+                                                <img src="pics/borneohomestay.png" alt="logo of my web engineering project, borneo homestay">
+                                            </figure>
+                                        </div>
+                                        <div class="media">
+                                            <div>
+                                                <article class="is-size-6">
+                                                    This is one of the mock systems that I did during the Web Engineering course. It allows homestay renters to login and do stuff like displaying homestay details, check bookings, check comments, and others.
+                                                    There is also an account for regular users (non-renters), where they can search for homestays (and filter through them), comment, book a homestay and view their 'tickets'.   
+                                                </article>
+                                                <!-- Tags showing the techs/language used -->
+                                                <div class="mt-3 mb-4">
+                                                    <span class="tag is-info mr-2 mb-2">HTML</span>
+                                                    <span class="tag is-info mr-2 mb-2">CSS</span>
+                                                    <span class="tag is-info mr-2 mb-2">PHP</span>
+                                                    <span class="tag is-info mr-2 mb-2">MySQL</span>
+                                                </div>
+                                                <button class="button is-small js-modal-trigger" data-target="modal-borneohomestay" aria-haspopup="true">View Report</button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> 
+                                <!-- Charity Management System -->
+                                <div class="box">
+                                    <h5 class="title is-5 has-text-centered">Charity Management System (Mock Charity Management System)</h5>
+                                    <article class="media">
+                                        <div class="media-left">
+                                            <!-- Image of project -->
+                                            <figure class="image is-128x128 is-flex is-align-items-center">
+                                                <img src="pics/charitysystem.png" alt="logo of my oomd project, charity management system">
+                                            </figure>
+                                        </div>
+                                        <div class="media">
+                                            <div>
+                                                <article class="is-size-6">
+                                                    This is one of the mock systems that my group did during our OOMD (Object Oriented Modelling Design) course. It allows charity companies to sign up, post ads about their charity events and receive details of interested volunteers.
+                                                    I did the Admin module, alongside as a 'compiler' where I integrated all the other modules coded by my teammates and ensured the UI/UX is all gucci.
+                                                </article>
+                                                <!-- Tags showing the techs/language used -->
+                                                <div class="mt-3 mb-4">
+                                                    <span class="tag is-info mr-2 mb-2">HTML</span>
+                                                    <span class="tag is-info mr-2 mb-2">CSS</span>
+                                                    <span class="tag is-info mr-2 mb-2">PHP</span>
+                                                    <span class="tag is-info mr-2 mb-2">MySQL</span>
+                                                </div>
+                                                <button class="button is-small js-modal-trigger" data-target="modal-charitymanagement" aria-haspopup="true">View Report</button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- Portfolio Web Eng -->
+                                <div class="box">
+                                    <h5 class="title is-5 has-text-centered">My Cute Portfolio</h5>
+                                    <article class="media">
+                                        <div class="media-left">
+                                            <!-- Image of project -->
+                                            <figure class="image is-128x128 is-flex is-align-items-center">
+                                                <img src="pics/portfolio.png" alt="logo of my web engineering project, a portfolio">
+                                            </figure>
+                                        </div>
+                                        <div class="media">
+                                            <div>
+                                                <article class="is-size-6">
+                                                    This is a simple (and cute) portfolio I did for my web engineering course! It has an admin account, where it allows the admin (me) to add new posts to the portfolio, and monitor registered users by 
+                                                    looking through their reported comments. Registered users are allowed to comment.
+                                                    It is more accurate to call it as a blog to be honest.
+                                                </article>
+                                                <!-- Tags showing the techs/language used -->
+                                                <div class="mt-3 mb-4">
+                                                    <span class="tag is-info mr-2 mb-2">HTML</span>
+                                                    <span class="tag is-info mr-2 mb-2">CSS</span>
+                                                    <span class="tag is-info mr-2 mb-2">PHP</span>
+                                                    <span class="tag is-info mr-2 mb-2">MySQL</span>
+                                                </div>
+                                                <button class="button is-small js-modal-trigger" data-target="modal-portoflio" aria-haspopup="true">View Report</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> 
+                                <!-- 3D Modelling Projects -->
+                                <div class="box">
+                                    <h5 class="title is-5 has-text-centered">Simple 3D Builder Projects</h5>
+                                    <article class="media">
+                                        <div class="media-left">
+                                            <!-- Image of project -->
+                                            <figure class="image is-128x128 is-flex is-align-items-center">
+                                                <img src="pics/BeFunky-collage.jpg" alt="collage of 3d builder projects i made">
+                                            </figure>
+                                        </div>
+                                        <div class="media">
+                                            <div>
+                                                <article class="is-size-6">
+                                                    These are simple 3D modelling projects I did during the 'Special Topics in CS' course! We also did an arduino rythmetic LED project (it blinks according to song's beat), and a simple calculator mobile app using MIT App Inventor.
+                                                    However, these three projects are the ones I am most proud and enjoy doing 💖 
+                                                </article>
+                                                <!-- Tags showing the techs/language used -->
+                                                <div class="mt-3 mb-4">
+                                                    <span class="tag is-info mr-2 mb-2">Microsoft 3D Builder</span>
+                                                </div>
+                                                <button class="button is-small js-modal-trigger" data-target="modal-view3dpics" aria-haspopup="true">View Pictures</button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -224,11 +343,38 @@
         <!-- Career -->
         <div id="career" name="outer" class="container is-fluid p-5 mt-4 mb-4 outer" hidden>
             <div class="has-background-white">
-                <div class="m-auto is-flex is-flex-direction-column p-5 mt-5 mb-5 content paragraph">
+                <div class="m-auto ms-2 is-flex is-flex-direction-column p-5 mt-5 mb-5 paragraph">
                     <div>
                         <h3 class="title is-3 has-text-centered">CAREER</h3>
                         <div>
-
+                            <div class="box is-flex is-justify-content-center is-align-content-center">
+                                <article class="media">
+                                    <div class="media-left">
+                                        <figure class="mt-2 image is-128x128" name="logo/brand/icon">
+                                            <img src="pics/ums.jpg" alt="UMS logo">
+                                        </figure>
+                                    </div>
+                                    <div class="media">
+                                        <div class="container content is-size-6 is-justify-content-center paragraph">
+                                            <h5>Practical Trainee (System Development)</h5>
+                                            <strong>Honda Malaysia Sdn Bhd</strong>
+                                            <br>March 2022 - August 2022
+                                            <br>
+                                            <article>
+                                                Description: 
+                                                <ul>
+                                                    <li>Built a full-stack web application that assists the Quality sections' Engineer to monitor
+                                                        the progress of issued parts.
+                                                    </li>
+                                                    <li>Assisted in supporting roles under the Admin Technician. Mostly tasks ranging from reports (using Microsoft Excel) to 
+                                                        minor office tasks (printing, lamination, etc).
+                                                    </li>
+                                                </ul>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -238,16 +384,61 @@
         <!-- Employment status -->
         <div id="employment" name="outer" class="container is-fluid p-5 mt-4 mb-4 outer" hidden>
             <div class="has-background-white">
-                <div class="m-auto is-flex is-flex-direction-column p-5 mt-5 mb-5 content paragraph>
+                <div class="m-auto is-flex is-flex-direction-column p-5 mt-5 mb-5 paragraph">
                     <div>
-                        <h3 class="title is-3 has-text-centered">EMPLOYMENT STATUS</h3>
-                        <div>
-                            Accomodation: No vehicle nor driving license as of now
-                            <br>Willing to learm a set of moves
+                        <h4 class="title is-3 has-text-centered">EMPLOYMENT STATUS</h4>
+                        <div class="is-flex is-flex-direction-row is-justify-content-space-evenly">
+                            <div class="box is-mobile is-size-6 paragraph">
+                                <div class="is-centered">
+                                    <div class="is-flex has-text-centered is-flex-direction-column is-justify-content-center is-align-content-center">
+                                        <figure>
+                                            <img src="pics/icons8-location-64.png" alt="A png image of a location icon">
+                                        </figure>
+                                        <article>
+                                            Currently residing in Melaka, <br>and prefer to work in Melaka for the first few years of my career.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box is-mobile is-size-6 paragraph">
+                                <div class="is-centered">
+                                    <div class="is-flex has-text-centered is-flex-direction-column is-justify-content-center is-align-content-center">
+                                        <figure>
+                                            <img src="pics/icons8-car-100.png" alt="icon of a car">
+                                        </figure>
+                                        <article>
+                                            Does not have a driving license.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box is-mobile is-size-6 paragraph">
+                                <div class="is-centered">
+                                    <div class="is-flex has-text-centered is-flex-direction-column is-justify-content-center is-align-content-center">
+                                        <figure>
+                                            <img src="pics/icons8-coding-100.png" alt="icon of a desktop with HTML illustration">
+                                        </figure>
+                                        <article>
+                                           Remote or on-site work? Both is okay!
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Modals to view more info about projects -->
+        <div id="modal-portoflio" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <p>Poop poop</p>
+                </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
         </div>
 
     </body>
@@ -255,14 +446,13 @@
         <div class="content has-text-centered">
             <p>
                 <strong>Lynn's portfolio</strong> by Wan Norazlin.</a><br>If you would like to contact me,
-                you can send an email to wwannorazlin@gmail.com or reach out to me thorugh my social media handles:
+                you can send an email to wwannorazlin@gmail.com or reach out to me thorugh these social media handles:
                 <div class="has-text-centered is-flex is-flex-content-center">
-                    <a href="#">
+                    <a target="_blank" href="https://www.linkedin.com/in/wan-norazlin-abdullah-7b6210205/">
                         <figure class="image is-32x32">
                             <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"/>  
                         </figure>
                     </a>
-                    
                 </div>
             </p>
         </div>
