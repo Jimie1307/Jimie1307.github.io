@@ -29,3 +29,16 @@ body{
 .paragraph, nav{
     font-family: 'Quicksand', sans-serif;
 }
+
+.scrollmenu{
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
