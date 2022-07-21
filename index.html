@@ -24,6 +24,7 @@
 
         <!-- Personal script -->
         <script src="./script/index.js"></script>
+        <script src="./script/showmodal.js"></script>
     </head>
     <body class="is-mobile">
 
@@ -292,7 +293,7 @@
                                                     <span class="tag is-info mr-2 mb-2">PHP</span>
                                                     <span class="tag is-info mr-2 mb-2">MySQL</span>
                                                 </div>
-                                                <button class="button is-small js-modal-trigger" data-target="modal-thesis" aria-haspopup="true">View Thesis</button>
+                                                <button id="modal-thesisbtn" class="button is-small" data-target="modal-thesis" aria-haspopup="true">View Thesis</button>
                                             </div>
                                         </div>
                                     </article>
@@ -320,7 +321,7 @@
                                                     <span class="tag is-info mr-2 mb-2">PHP</span>
                                                     <span class="tag is-info mr-2 mb-2">MySQL</span>
                                                 </div>
-                                                <button class="button is-small js-modal-trigger" data-target="modal-borneohomestay" aria-haspopup="true">View Report</button>
+                                                <button id="modal-borneohomestaybtn" class="button is-small" aria-haspopup="true">View Demo Video</button>
                                             </div>
                                         </div>
                                     </article>
@@ -348,7 +349,7 @@
                                                     <span class="tag is-info mr-2 mb-2">PHP</span>
                                                     <span class="tag is-info mr-2 mb-2">MySQL</span>
                                                 </div>
-                                                <button class="button is-small js-modal-trigger" data-target="modal-charitymanagement" aria-haspopup="true">View Report</button>
+                                                <button id="modal-charitybtn" class="button is-small" aria-haspopup="true">View Demo Video</button>
                                             </div>
                                         </div>
                                     </article>
@@ -377,7 +378,7 @@
                                                     <span class="tag is-info mr-2 mb-2">PHP</span>
                                                     <span class="tag is-info mr-2 mb-2">MySQL</span>
                                                 </div>
-                                                <button class="button is-small js-modal-trigger" data-target="modal-portoflio" aria-haspopup="true">View Report</a>
+                                                <button id="modal-portfliobtn" class="button is-small" aria-haspopup="true">View Report</a>
                                             </div>
                                         </div>
                                     </article>
@@ -402,7 +403,7 @@
                                                 <div class="mt-3 mb-4">
                                                     <span class="tag is-info mr-2 mb-2">Microsoft 3D Builder</span>
                                                 </div>
-                                                <button class="button is-small js-modal-trigger" data-target="modal-view3dpics" aria-haspopup="true">View Pictures</button>
+                                                <button id="modal-3dbuilderbtn" class="button is-small" aria-haspopup="true">View Pictures</button>
                                             </div>
                                         </div>
                                     </article>
@@ -450,17 +451,62 @@
             </div>
         </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.js"></script>
         <!-- Modals to view more info about projects -->
-        <div id="modal-portoflio" class="modal">
+
+        <!-- Modal for fyp -->
+        <div id="modal-thesis" class="modal">
             <div class="modal-background"></div>
             <div class="modal-content">
-                <div class="box">
-                    <p>Poop poop</p>
+                <div id="thesis" class="box">
+                    <script>PDFObject.embed("docs/Thesis_BI18110278.pdf","#thesis")</script>
                 </div>
+                <style>
+                    .pdfobject-container {
+                        width: 40rem;
+                        height: 45rem;
+                    }
+                </style>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
+            <button id="modal-closethesis" class="modal-close is-large" aria-label="close"></button>
         </div>
 
+        <!-- Modal for portfolio web engineering project -->
+        <div id="modal-portfolio" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div id="portfoliowebeng" class="box">
+                    <script>PDFObject.embed("docs/KK24603 REPORT BI18110278.pdf","#portfoliowebeng")</script>
+                </div>
+                <style>
+                    .pdfobject-container {
+                        width: 40rem;
+                        height: 45rem;
+                    }
+                </style>
+            </div>
+            <button id="modal-closeportfolio" class="modal-close is-large" aria-label="close"></button>
+        </div>
+
+        <!-- Modal for 3d builder project -->
+        <div id="modal-3dbuilder" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <figure class="image">
+                    <img src="pics/jkrLogo.png" alt="Logo of JKR I did using 3d builder">
+                </figure>
+                <figure class="image">
+                    <img src="pics/jkrLogo2.png" alt="Another logo of JKR I did using 3d builder">
+                </figure>
+                <figure class="image">
+                    <img src="pics/shimono botol.png" alt="A shimono bottle made using 3d builder">
+                </figure>
+                <figure class="image">
+                    <img src="pics/airportLogo.png" alt="The Malaysian Airport logo made using 3d builder">
+                </figure>
+            </div>
+            <button id="modal-close3dbuilder" class="modal-close is-large" aria-label="close"></button>
+        </div>
     </body>
     <footer class="footer is-flex is-justify-content-center">
         <div class="content has-text-centered">
