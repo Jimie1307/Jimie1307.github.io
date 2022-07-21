@@ -42,3 +42,7 @@ body{
 .show {
     display: block !important;
 }
+
+.nowrap {
+    white-space: nowrap;
+}
