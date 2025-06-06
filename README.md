@@ -1,3 +1,4 @@
-# My Online Portfolio! >.<
-Hi! This repo contains all the stuff I wrote to build my super simple online portfolio :D
-Intended to include this in my resume! Hopefully my creative juices will come out with a bunch of ideas on how to make it cute and fun to look at lol
+# Development branch for my portfolio
+I intend to use React Typescript to redo my portfolio. Reason for doing so is to learn how to use
+React Typescript, as my new team is using it. Also it does not hurt to modernise my portfolio a bit haha
+
