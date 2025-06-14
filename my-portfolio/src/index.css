@@ -1,10 +1,15 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 /* Add margin to the component, aesthetic purposes */
 .m-16-all{
   margin: 16px;
 }
 
+html{
+  background-color: #504b43ff;
+  color: black;
+}
 
 /* Color palette generated from coolors.co
 

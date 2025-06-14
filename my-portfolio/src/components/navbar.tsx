@@ -1,24 +1,31 @@
+import { Link } from "react-router-dom"
+
 interface NavbarProps {
 
 }
 
 const Navbar: React.FC<NavbarProps> = () => {
 
+  const handlePageNav = async (e: number) => {
+    console.log("btn navbar is clicked!")
+    console.log(e)
+
+  }
 
   return (
-    <div className='flex flex-row items-baseline-last gap-4'>
-        <button>
-            <p className='text-1xl'>Home</p>
-        </button>
-        <button>
-            <p className='text-1xl'>Career</p>
-        </button>
-        <button>
-            <p className='text-1xl'>Education</p>
-        </button>
-        <button>
-            <p className='text-1xl'>Gallery</p>
-        </button>
+    <div className='navbar'>
+        <Link to="/" className="btn btn-link text-black no-underline">
+          <p className="text-1xl">Home</p>
+        </Link>
+        <Link to="/career" className="btn btn-link text-black no-underline">
+          <p className="text-1xl">Career</p>
+        </Link>
+        <Link to="/edu" className="btn btn-link text-black no-underline">
+          <p className="text-1xl">Education</p>
+        </Link>
+        <Link to="/gallery" className="btn btn-link text-black no-underline">
+          <p className="text-1xl">Gallery</p>
+        </Link>
     </div>
   );
 }
