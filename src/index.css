@@ -7,7 +7,7 @@
 }
 
 html{
-  background-color: #504b43ff;
+  background-color: transparent;
   color: black;
 }
 
@@ -94,4 +94,18 @@ html{
 
 .dark-green-text{
   color: #1a281fff;
+}
+
+.text-upright{
+  writing-mode: vertical-lr;
+  display: inline-block;
+  text-orientation: upright;
+}
+
+.side-text-bar{
+  color: #504b43ff;
+}
+
+.side-text-bar:hover{
+  color: white;
 }

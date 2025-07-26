@@ -1,7 +1,5 @@
 import './App.css'
 import Header from './components/header'
-import Footer from './components/footer'
-import Banner from './components/banner'
 import LandingPage from './pages/landing';
 import CareerPage from './pages/career';
 import { Route, Routes } from 'react-router-dom';
@@ -20,7 +18,7 @@ export const routesMapping = [
     },
     {
         path: "/edu",
-        element: <EduPage />
+        element: <EduPage school={''} duration={''} desc={''} edulevel={''} />
     },
     {
         path: "/gallery",
@@ -30,17 +28,17 @@ export const routesMapping = [
 
 function App() {
   return (
-     <div className='bg-white ml-8'>
-      <Banner />
-      <Header />
-      <Routes>
-          {
-            routesMapping.map((route, index) => {
-                return <Route key={index} path={route.path} element={route.element} />
-            })
-          }
-      </Routes> 
-      <Footer />
+     <div className={window.screen.width <= 768 ? "m-2" : "m-12"}>
+        <div className="rounded-[8px]">
+            <Header />
+            <Routes>
+                {
+                    routesMapping.map((route, index) => {
+                        return <Route key={index} path={route.path} element={route.element} />
+                    })
+                }
+            </Routes> 
+        </div>
     </div>
   )
 }

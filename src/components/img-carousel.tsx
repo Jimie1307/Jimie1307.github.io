@@ -59,7 +59,7 @@ const ImgCarousel: React.FC<ImgCarouselProps> = () => {
     return (
         <div className='m-16 grid grid-flow-col grid-rows-2 grid-col-4 gap-1'>
             {(imgRotation && imgRotation.length > 0) &&
-                imgRotation.map((item, index) =>
+                imgRotation.map((index) =>
                 <img className='max-w-full max-h-full' src={imgRotation[index]} alt={imgRotationDesc[index]}></img>
             )}
         </div>

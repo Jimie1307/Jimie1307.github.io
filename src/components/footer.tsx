@@ -11,8 +11,8 @@ const Footer: React.FC<FooterProps> = () => {
 
 
   return (
-    <div className='mt-6 pt-16 walnut-brown-bg'>
-        <div className='m-4 flex flex-col gap-6'>
+    <div className='walnut-brown-bg'>
+        <div className='p-4 flex flex-col gap-6'>
             <div className='text-white'>
                 <p className='text-sm'>This website serves as a portfolio, but thinking of making it more personal.
                     <br></br>

@@ -8,7 +8,7 @@ const Header: React.FC<HeaderProps> = () => {
 
 
   return (
-    <div className="bg-white mb-16 mr-16 ml-16 flex flex-row justify-items-center-safe items-baseline-last gap-6">
+    <div className={window.screen.width <= 768 ? "flex flex-col justify-items-center gap-6" : "flex flex-row justify-items-center-safe items-baseline-last gap-6"}>
         <h1 className="text-7xl text-black">JIMIE'S</h1>
         <div>
             <Navbar></Navbar>
