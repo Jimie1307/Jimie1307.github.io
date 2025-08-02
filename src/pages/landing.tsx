@@ -6,12 +6,12 @@ const LandingPage: React.FC<LandingProps> = () => {
   return (
     <div id="landing" className="flex flex-col">
         {/* formal intro */}
-        <div className='flex flex-row m-12 gap-4 pb-5'>
+        <div className={window.screen.width <= 768 ? 'flex flex-row m-2 gap-4 pb-5' : 'flex flex-row m-12 gap-4 pb-5'}>
             <div className='walnut-brown-bg text-upright'>
                 <p className="side-text-bar text-sm font-semibold">FORMAL INTRODUCTION</p>
             </div>
             <div className="walnut-brown-bg p-[1.675px] rounded-[2px]"></div>
-            <div className="w-3/5">
+            <div className={window.screen.width <= 768 ? "" : "w-3/5"}>
                 <h3 className="text-xl font-semibold mb-4">HELLO!（ΦωΦ）</h3>
                 <p className='m-4 text-base/8'>
                     Welcome to my webpage! <br/>
@@ -24,12 +24,12 @@ const LandingPage: React.FC<LandingProps> = () => {
             </div>
         </div>
         {/* whatever intro */}
-        <div className='flex flex-row m-12 gap-4 pb-5'>
+        <div className={window.screen.width <= 768 ? 'flex flex-row m-2 gap-4 pb-5' : 'flex flex-row m-12 gap-4 pb-5'}>
             <div className='walnut-brown-bg text-upright'>
                 <p className="side-text-bar text-sm font-semibold">YOU CAN KNOW ME A BIT</p>
             </div>
             <div className="walnut-brown-bg p-[1.675px] rounded-[2px]"></div>
-            <div className="w-3/5">
+            <div className={window.screen.width <= 768 ? "" : "w-3/5"}>
                 <h3 className="text-xl font-semibold mb-4">INTERESTS!¯\_(͠≖ ͜ʖ͠≖)_/¯</h3>
                 <div className='m-4'>
                     <h3 className="text-l font-semibold">🎵MUSIC</h3>
@@ -39,7 +39,7 @@ const LandingPage: React.FC<LandingProps> = () => {
                         Some musicians I like currently: Sleep Token, BTS, TXT (Tubatu), Amaarae.<br/>
                         <p className='font-medium'>🔁On-repeat</p>
                         <iframe 
-                        width="320" height="100" 
+                        width={window.screen.width <= 768 ? "180":"320"} height={window.screen.width <= 768 ? "180":"100"} 
                         src="https://www.youtube.com/embed/dHGnpeA6rI0?si=j17FpO0NKZxJ1T5I" 
                         title="Ghost girl" frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -52,7 +52,7 @@ const LandingPage: React.FC<LandingProps> = () => {
                     <p className='m-4 mt-0 text-base/8'>
                         Play mostly RPGs. Not a big fan of multiplayer games (especially competitive) but I do play gacha from time-to-time (mihoyo mostly)!<br/>
                         <p className='font-medium'>Some of my favorite games! (ΦзΦ) ❤️  </p>
-                        <div className='flex flex-row gap-6'>
+                        <div className={window.screen.width <= 768 ? 'grid grid-cols-2 gap-4 mt-2' : 'grid grid-cols-8 gap-2 mt-2'}>
                             <div className="tooltip tooltip-bottom"  data-tip="Baldurs Gate 3">
                                 <div className="avatar">
                                     <div className="w-24 rounded">

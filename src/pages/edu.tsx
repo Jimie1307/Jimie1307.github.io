@@ -34,7 +34,7 @@ const EduPage: React.FC<EduProps> = () => {
 
   return (
     <div id="edu" className="flex flex-col">
-        <div className='flex flex-row m-12 mb-0 gap-4 pb-5'>
+        <div className={window.screen.width <= 768 ? 'flex flex-row m-2 mb-0 gap-4 pb-5':'flex flex-row m-12 mb-0 gap-4 pb-5'}>
           <div className='walnut-brown-bg text-upright'>
             <p className="side-text-bar text-sm font-semibold">FUN YEARS</p>
           </div>
@@ -50,7 +50,7 @@ const EduPage: React.FC<EduProps> = () => {
             />
           </div>
         </div>
-        <div className='flex flex-row m-12 mb-0 gap-4 pb-5'>
+        <div className={window.screen.width <= 768 ? 'flex flex-row m-2 mb-0 gap-4 pb-5':'flex flex-row m-12 mb-0 gap-4 pb-5'}>
           <div className='walnut-brown-bg text-upright'>
             <p className="side-text-bar text-sm font-semibold">OKAY LAH</p>
           </div>
@@ -66,7 +66,7 @@ const EduPage: React.FC<EduProps> = () => {
             />
           </div>
         </div>
-        <div className='flex flex-row m-12 mb-0 gap-4 pb-5'>
+        <div className={window.screen.width <= 768 ? 'flex flex-row m-2 mb-0 gap-4 pb-5':'flex flex-row m-12 mb-0 gap-4 pb-5'}>
           <div className='walnut-brown-bg text-upright'>
             <p className="side-text-bar text-sm font-semibold">ONLY SAMURA OKAY-ISH</p>
           </div>

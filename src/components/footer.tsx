@@ -22,16 +22,16 @@ const Footer: React.FC<FooterProps> = () => {
             {/* Might have to change these icons to suit the aesthetic */}
             <div className='flex gap-4'>
                 <button>
-                    <img src={InstaLogo}></img>
+                    <img width="48" src={InstaLogo}></img>
                 </button>
                 <button>
-                    <img src={GithubLogo}></img>
+                    <img width="48" src={GithubLogo}></img>
                 </button>
                 <button>
-                    <img src={LinkedInLogo}></img>
+                    <img width="48" src={LinkedInLogo}></img>
                 </button>
                 <button>
-                    <img src={GmailLogo}></img>
+                    <img width="48" src={GmailLogo}></img>
                 </button>
             </div>
         </div>

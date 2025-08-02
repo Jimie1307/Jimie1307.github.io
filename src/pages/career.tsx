@@ -30,7 +30,7 @@ interface CareerProps {
 const CareerPage: React.FC<CareerProps> = () => {
   return (
     <div id="career" className="flex flex-col">
-        <div className='flex flex-row m-12 gap-4 pb-5'>
+        <div className={window.screen.width <= 768 ? 'flex flex-row m-2 gap-4 pb-5':'flex flex-row m-12 gap-4 pb-5'}>
           <div className='walnut-brown-bg text-upright'>
             <p className="side-text-bar text-sm font-semibold">ADULTING PHASE</p>
           </div>
@@ -75,7 +75,7 @@ const CareerPage: React.FC<CareerProps> = () => {
               />
           </div>
         </div>
-        <div className='flex flex-row m-12 gap-4 pb-5'>
+        <div className={window.screen.width <= 768 ? 'flex flex-row m-2 gap-4 pb-5':'flex flex-row m-12 gap-4 pb-5'}>
           <div className='walnut-brown-bg text-upright'>
             <p className="side-text-bar text-sm font-semibold">MEH, NOT FUN</p>
           </div>
